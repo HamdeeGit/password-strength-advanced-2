@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- Page Title -->
+    <title>Password Strength</title>
+    <!-- CSS Style Links -->
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!-- Font Awesome JS Files Links -->    
+    <script defer src="faws-5.15.3-web/js/all.js"></script>
+</head>
+<body>  
+
+    <div class="container">
+
+        <h3 class="title">Password Strength Indicator</h3>
+
+        <form action="#">
+
+            <div class="passWordContainer">
+                <input type="password" class="password" id="password" placeholder="Type Passward">
+                <span class="showBtn"></span>
+            </div>
+
+            <div class="indicator">
+                <span class="weak"></span>
+                <span class="medium"></span>
+                <span class="strong"></span>
+                <span class="veryStrong"></span>
+            </div>
+
+            <div class="text"></div>
+            <div class="passwordDetails">
+                <div class="passwordLength">6 Characters</div>
+                <div class="passwordNumbers">Containes Numbers</div>
+                <div class="passwordLettersUpper">Containes Letters UpperCase</div>
+                <div class="passwordLettersLower">Containes Letters LowerCase</div>
+                <div class="passwordSpecialChrts">Containes Special Characters</div>
+            </div>
+            
+        </form>
+    </div>
+
+    <script src="script.js" href="script.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+@charset "utf-8";
+
+:root {
+--primary-color: #aa2081;
+--overlay-color: #00b2e9;
+--font-color-default: whitesmoke;
+--first-color: rgb(6, 89, 0);
+--second-color: rgb(181, 65, 113);
+--third-color: rgb(0, 21, 160);
+--green-color: green;
+--lightGreen-color: rgb(71, 255, 206);
+--yellow--color: orange;
+--red-color: red;
+--white-color: #fff;
+--white-transparent-light: rgba(255, 255, 255, 0.1);
+--white-transparent-heavy: rgba(255, 255, 255, 0.5);
+--black-color: #000;
+--black-transparent-light: rgba(0, 0, 0, 0.15);
+--black-transparent-heavy: rgba(0, 0, 0, 0.5);
+--grey-color: grey;
+--blackish-color: rgb(40, 41, 43);
+--menu-speed: 1.75s;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body { 
+    background: linear-gradient(45deg, var(--grey-color), var(--white-color), var(--grey-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    min-width: 100vw;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    background-color: transparent;
+}
+.container h3 {
+    font-size: 1.4em;
+    font-weight: normal;
+    letter-spacing: 0.08em;
+    text-align: center;
+    color: var(--black-transparent-heavy);
+    margin-bottom: 40px;
+}
+
+.container form {
+    margin: 0px;
+    background: var(--black-color);
+}
+
+.container .passWordContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.container input {
+    height: 100%;
+    width: 250px;
+    padding: 10px;
+    margin: 10px 0px 0px;
+    font-size: 0.8em;
+    letter-spacing: 0.05em;
+    color: var(--white-color);
+    background: var(--white-transparent-light);
+    border-radius: 5px;
+    border: 2px solid var(--white-transparent-heavy);
+    user-select: none;
+    outline: none;
+}
+
+.container input:focus {
+    border-color: var(--overlay-color);
+}
+
+.container input::placeholder {
+    font-size: 1em;
+    color: var(--white-transparent-heavy);
+}
+
+.container .showBtn {
+    position: absolute;
+    right: 20px;
+    bottom: 8px;
+    font-size: 1em;
+    color: var(--white-transparent-heavy);
+    cursor: pointer;
+}
+
+.indicator {
+    height: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3px;
+    margin: 10px;
+}
+
+.indicator span {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: var(--white-transparent-heavy);
+    border-radius: 4px;
+}
+
+.indicator span::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+}
+
+.indicator span.active.weak:before {
+    background-color: var(--red-color);
+}
+
+.indicator span.active.medium:before {
+    background-color: var(--yellow--color);
+}
+
+.indicator span.active.strong:before {
+    background-color: var(--lightGreen-color);
+}
+
+.indicator span.active.veryStrong:before {
+    background-color: var(--green-color);
+}
+
+form .text {
+    font-size: 0.9em;
+    font-weight: normal;
+    letter-spacing: 0.08em;
+    text-align: center;
+    color: var(--white-color);
+    opacity: 0;
+}
+
+.text.weak {
+    color: var(--red-color);
+}
+
+.text.medium {
+    color: var(--yellow--color);
+}
+
+.text.strong {
+    color: var(--lightGreen-color);
+}
+
+.text.veryStrong {
+    color: var(--green-color);
+}
+
+
+form .passwordDetails {
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 1;
+    background-color: var(--black-color  );
+    overflow: hidden;
+}
+
+form .passwordDetails.active {
+    opacity: 1;
+    height: 100%;
+} 
+
+form .passwordDetails > div {
+    font-size: 0.75em;
+    font-weight: 550;
+    letter-spacing: 0.1em;
+    color: var(--white-transparent-heavy);
+    margin: 10px;
+}
+
+form .passwordDetails > div.active {
+    color: var(--white-color);
+}
+
+
+
+    /*
+        box-shadow: 0px 20px 40px var(--black-transparent-light),
+                    0px 15px 10px var(--black-transparent-light);
+
+
+        box-shadow: 5px 5px 10px var(--black-transparent-light),
+                    -5px -5px 10px var(--black-transparent-light);
+
+        box-shadow: -3px -3px 15px 2px var(--black-transparent-light),
+                    2px 2px 15px 2px var(--black-transparent-light);
+ 
+        box-shadow: inset 10px 10px 15px rgba(255, 255, 255, 0.3),
+                    inset -10px -10px 15px rgba(255, 255, 255, 0.3);
+    
+        .container span {
+    position: absolute;
+    right: 20px;
+    bottom: 6px;
+    font-size: 1.4em;
+    color: var(--white-transparent-heavy);
+    cursor: pointer;
+    display: none;
+}
+
+                    */
