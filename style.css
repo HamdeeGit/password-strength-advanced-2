@@ -196,31 +196,3 @@ form .passwordDetails > div {
 form .passwordDetails > div.active {
     color: var(--white-color);
 }
-
-
-
-    /*
-        box-shadow: 0px 20px 40px var(--black-transparent-light),
-                    0px 15px 10px var(--black-transparent-light);
-
-
-        box-shadow: 5px 5px 10px var(--black-transparent-light),
-                    -5px -5px 10px var(--black-transparent-light);
-
-        box-shadow: -3px -3px 15px 2px var(--black-transparent-light),
-                    2px 2px 15px 2px var(--black-transparent-light);
- 
-        box-shadow: inset 10px 10px 15px rgba(255, 255, 255, 0.3),
-                    inset -10px -10px 15px rgba(255, 255, 255, 0.3);
-    
-        .container span {
-    position: absolute;
-    right: 20px;
-    bottom: 6px;
-    font-size: 1.4em;
-    color: var(--white-transparent-heavy);
-    cursor: pointer;
-    display: none;
-}
-
-                    */
